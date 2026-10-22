@@ -2,7 +2,7 @@
 
 Página pessoal com projetos públicos e privados, experiência e contato, em **português** (padrão) e **inglês**.
 
-**Ao vivo:** https://lukinas1417.github.io/portfolio/
+**Ao vivo:** https://lukinas1417.github.io/
 
 ## Como funciona
 
