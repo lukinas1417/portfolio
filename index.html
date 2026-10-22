@@ -39,7 +39,7 @@
         <h1>Lucas de Mélo Berra</h1>
         <p class="papel" data-i18n="hero.role">Desenvolvedor Full Stack · Automação de processos · Integrações</p>
         <p class="resumo" data-i18n="hero.p1">Crio sistemas corporativos, aplicativos e plataformas web com regras de negócio complexas. Atuo de ponta a ponta: da análise da necessidade ao desenvolvimento, à integração, à implantação e à manutenção em produção.</p>
-        <p class="resumo" data-i18n="hero.p2">Tenho experiência com automação de processos, APIs externas e hardware, em soluções usadas todos os dias por diferentes setores.</p>
+        <p class="resumo" data-i18n="hero.p2">Antes de escrever código, procuro entender o que o sistema precisa ter para funcionar de verdade: dados confiáveis, falhas previstas, regras de negócio claras e uma operação simples. Tenho experiência com automação de processos, APIs externas e hardware.</p>
         <div class="acoes">
           <a class="botao primario" href="#projetos" data-i18n="hero.cta_projects">Ver projetos</a>
           <a class="botao" id="cv-principal" href="assets/curriculo-lucas-berra-pt.pdf" download data-i18n="hero.cta_cv">Baixar currículo</a>
@@ -67,10 +67,13 @@
           <p class="tipo" data-i18n="radar.kind">Projeto público · código aberto</p>
           <h3>Radar de Chuva RS</h3>
           <p data-i18n="radar.desc">Mapa em tela cheia da chuva acumulada e da situação dos rios em cada município do Rio Grande do Sul, com dados quase em tempo real do CEMADEN e da Defesa Civil RS. Feito para ser entendido de relance: a sua cidade, a chuva e o rio, sem planilha.</p>
+          <h4 class="rotulo-pontos" data-i18n="radar.decisions">Decisões de sistema</h4>
           <ul class="pontos">
-            <li data-i18n="radar.b1">Coleta agendada no GitHub Actions, tolerante a fontes instáveis: tenta de novo, reaproveita o último dado e avisa quando ele está velho.</li>
-            <li data-i18n="radar.b2">Separa "sem dado" de "sem chuva" e nunca indica normalidade quando não há leitura.</li>
-            <li data-i18n="radar.b3">Relevo 3D opcional, localização que não sai do navegador, busca por teclado e layout para celular.</li>
+            <li><b data-i18n="radar.b1t">Fontes instáveis são o caso normal.</b> <span data-i18n="radar.b1">Tenta de novo, reaproveita o último dado publicado e avisa quando ele está velho.</span></li>
+            <li><b data-i18n="radar.b2t">Integridade do dado.</b> <span data-i18n="radar.b2">“Sem dado” é diferente de zero, e o sistema nunca indica normalidade quando não há leitura.</span></li>
+            <li><b data-i18n="radar.b3t">Falha segura.</b> <span data-i18n="radar.b3">Sem certificado válido ou sem token, não contorna a proteção: mostra o último dado e diz de quando ele é.</span></li>
+            <li><b data-i18n="radar.b4t">Operação enxuta.</b> <span data-i18n="radar.b4">Site estático e coleta agendada, sem servidor, respeitando os limites e as regras de uso de cada fonte.</span></li>
+            <li><b data-i18n="radar.b5t">Privacidade.</b> <span data-i18n="radar.b5">A localização do usuário nunca sai do navegador.</span></li>
           </ul>
           <ul class="tags">
             <li>JavaScript</li><li>MapLibre GL</li><li>GraphQL</li><li>GitHub Actions</li><li>GitHub Pages</li>
@@ -79,6 +82,7 @@
           <div class="acoes">
             <a class="botao primario" href="https://lukinas1417.github.io/radar-chuva-rs/" rel="noopener" data-i18n="radar.live">Ver ao vivo</a>
             <a class="botao" href="https://github.com/lukinas1417/radar-chuva-rs" rel="noopener" data-i18n="radar.code">Ver código</a>
+            <a class="botao" href="https://github.com/lukinas1417/radar-chuva-rs/blob/main/docs/arquitetura.md" rel="noopener" data-i18n="radar.arch">Arquitetura e decisões</a>
           </div>
           <p class="nota" data-i18n="radar.note">Projeto de portfólio: não substitui os alertas oficiais da Defesa Civil.</p>
         </div>
@@ -175,17 +179,6 @@
           <ul class="tags"><li>Git</li><li data-i18n="s.hw">Integrações com hardware</li></ul>
         </div>
       </div>
-      <div class="fatos">
-        <div>
-          <h3 data-i18n="lang.title">Idiomas</h3>
-          <p data-i18n="lang.pt">Português: nativo</p>
-          <p data-i18n="lang.en">Inglês: intermediário/avançado, para leitura técnica e comunicação escrita</p>
-        </div>
-        <div>
-          <h3 data-i18n="edu.title">Formação</h3>
-          <p data-i18n="edu.v">Ensino médio completo</p>
-        </div>
-      </div>
     </section>
 
     <section class="secao reveal contato" id="contato">
@@ -198,6 +191,7 @@
         <li><a href="mailto:lmberra2@gmail.com">lmberra2@gmail.com</a></li>
         <li><a href="https://www.linkedin.com/in/lucasberra-b47550149/" rel="me noopener">LinkedIn</a></li>
         <li><a href="https://github.com/lukinas1417" rel="me noopener">GitHub</a></li>
+        <li><a href="https://wa.me/qr/GRPGSCZMHAHEL1" rel="noopener">WhatsApp</a></li>
       </ul>
       <div class="acoes">
         <a class="botao" href="assets/curriculo-lucas-berra-pt.pdf" download data-i18n="contact.cv_pt">Currículo em português (PDF)</a>
