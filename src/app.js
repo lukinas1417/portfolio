@@ -23,7 +23,7 @@ const EN = {
   'radar.code': 'Code',
   'radar.arch': 'Architecture and decisions',
   'radar.desc':
-    'A full-screen map of accumulated rainfall and river status for every municipality in Rio Grande do Sul, using near real-time data from CEMADEN and the state Civil Defense.',
+    'A full-screen map of accumulated rainfall, the next hours’ forecast and river status for every municipality in Rio Grande do Sul, using near real-time data from CEMADEN and the state Civil Defense, plus a model estimate where there is no rain gauge.',
   'radar.open': 'Open Radar de Chuva RS',
   'radar.img_alt': 'Map of Rio Grande do Sul with rainfall per municipality and glowing outlines on rivers at risk',
 
