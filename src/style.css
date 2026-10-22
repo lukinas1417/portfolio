@@ -130,9 +130,6 @@ h2 { font-size: clamp(1.6rem, 3.4vw, 2.1rem); letter-spacing: -0.015em; font-wei
 .cartao h4 { font-size: 1.05rem; }
 .cartao p { color: #c4d2df; font-size: 15.5px; }
 .cartao-largo .tipo { margin-bottom: 10px; }
-.grupo { margin: 44px 0 16px; font-size: 13px; font-family: var(--mono); font-weight: 500; letter-spacing: 0.04em; color: var(--suave); text-transform: uppercase; }
-.grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
-
 /* linha do tempo */
 .linha-tempo { margin-top: 28px; display: grid; gap: 0; border-left: 1px solid var(--linha); margin-left: 6px; }
 .linha-tempo li { position: relative; padding: 0 0 36px 30px; }
