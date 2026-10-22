@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-  <div class="faixa">
+  <div class="faixa" id="inicio">
     <span class="mono" data-i18n="bar.label">Portfólio · 2026</span>
     <div class="idioma" role="group" aria-label="Idioma / Language">
       <button type="button" data-lang="pt" aria-pressed="true">PT</button>
@@ -40,8 +40,7 @@
           <li><a href="https://www.linkedin.com/in/lucasberra-b47550149/" rel="me noopener">LinkedIn</a></li>
           <li><a href="https://github.com/lukinas1417" rel="me noopener">GitHub</a></li>
           <li><a href="https://wa.me/qr/GRPGSCZMHAHEL1" rel="noopener">WhatsApp</a></li>
-          <li><a href="assets/curriculo-lucas-berra-pt.pdf" download data-i18n="cv.pt">Currículo (PT)</a></li>
-          <li><a href="assets/resume-lucas-berra-en.pdf" download data-i18n="cv.en">Currículo (EN)</a></li>
+          <li><a id="cv" href="assets/curriculo-lucas-berra-pt.pdf" download data-i18n="cv.label">Currículo (PDF)</a></li>
         </ul>
       </div>
     </header>
@@ -86,7 +85,7 @@
       <div class="margem"><h2 data-i18n="sec.exp">Experiência</h2></div>
       <ol class="experiencia">
         <li>
-          <p class="quando mono" data-i18n="exp1.when">2022 – atual</p>
+          <p class="quando mono" data-i18n="exp1.when">2022 – 2026</p>
           <div>
             <h3><span data-i18n="exp1.role">Técnico de Sistemas Sênior</span> <span class="empresa" data-i18n="exp1.company">· Setor industrial</span></h3>
             <p data-i18n="exp1.desc">Soluções sob medida para setores específicos: automação de processos, integração de sistemas e manutenção de sistemas críticos usados diariamente.</p>
@@ -117,6 +116,16 @@
     <p class="mono">© 2026 Lucas de Mélo Berra</p>
     <p class="mono" data-i18n="footer.text">Feito à mão, com HTML, CSS e JavaScript, sem frameworks.</p>
   </footer>
+
+  <nav class="trilha" aria-label="Seções da página" data-i18n-attr="aria-label:nav.label">
+    <ol>
+      <li><a href="#inicio" data-i18n="nav.top">Início</a></li>
+      <li><a href="#radar" data-i18n="nav.radar">Radar</a></li>
+      <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+      <li><a href="#experiencia" data-i18n="nav.exp">Experiência</a></li>
+      <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+    </ol>
+  </nav>
 
   <script type="module" src="src/app.js"></script>
 </body>

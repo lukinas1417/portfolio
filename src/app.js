@@ -4,13 +4,19 @@
 const EN = {
   'bar.label': 'Portfolio · 2026',
 
+  'nav.label': 'Page sections',
+  'nav.top': 'Start',
+  'nav.radar': 'Radar',
+  'nav.projects': 'Projects',
+  'nav.exp': 'Experience',
+  'nav.stack': 'Stack',
+
   'who.alt': 'Portrait of Lucas de Mélo Berra',
   'hero.role': 'Full Stack Developer · Process Automation · Integrations',
   'hero.lead':
     'I build corporate systems, mobile apps and web platforms with complex business rules, from analysis to production.',
   'hero.meta': 'Rio Grande do Sul, Brazil · Available for opportunities',
-  'cv.pt': 'Résumé (PT)',
-  'cv.en': 'Résumé (EN)',
+  'cv.label': 'Resume (PDF)',
 
   'radar.kind': 'Featured · public project · open source',
   'radar.live': 'View live',
@@ -34,7 +40,7 @@ const EN = {
   's.hw': 'Hardware integrations',
 
   'sec.exp': 'Experience',
-  'exp1.when': '2022 – present',
+  'exp1.when': '2022 – 2026',
   'exp1.role': 'Senior Systems Technician',
   'exp1.company': '· Industrial sector',
   'exp1.desc':
@@ -60,6 +66,12 @@ const TITULO = {
 const DESCRICAO = {
   pt: 'Portfólio de Lucas de Mélo Berra, desenvolvedor Full Stack com foco em automação de processos e integrações.',
   en: 'Portfolio of Lucas de Mélo Berra, Full Stack developer focused on process automation and integrations.',
+};
+
+// O currículo muda junto com o idioma: em português só o PDF em português, em inglês só o em inglês.
+const CURRICULO = {
+  pt: 'assets/curriculo-lucas-berra-pt.pdf',
+  en: 'assets/resume-lucas-berra-en.pdf',
 };
 
 // Guarda o português que já está no HTML, para poder voltar a ele.
@@ -98,6 +110,7 @@ function aplicar(lang) {
       el.setAttribute(attr, (en ? EN[chave] : undefined) ?? ATRIBUTOS_PT.get(el)[attr]);
     }
   });
+  document.getElementById('cv').setAttribute('href', CURRICULO[lang]);
   document.querySelectorAll('.idioma button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
 }
 
@@ -107,6 +120,37 @@ document.querySelector('.idioma').addEventListener('click', (ev) => {
   aplicar(botao.dataset.lang);
   lembrar(botao.dataset.lang);
 });
+
+// ---------- menu flutuante: mostra em que seção a pessoa está e leva a qualquer uma ----------
+const trilha = document.querySelector('.trilha');
+const itens = [...trilha.querySelectorAll('a')];
+const secoes = itens.map((a) => document.querySelector(a.getAttribute('href')));
+let agendado = false;
+
+function atualizarTrilha() {
+  agendado = false;
+  // só aparece depois que a pessoa começa a rolar, para não poluir a primeira tela
+  trilha.classList.toggle('visivel', scrollY > 240);
+  const referencia = innerHeight * 0.4;
+  let atual = 0;
+  secoes.forEach((secao, i) => {
+    if (secao.getBoundingClientRect().top <= referencia) atual = i;
+  });
+  if (innerHeight + scrollY >= document.documentElement.scrollHeight - 4) atual = secoes.length - 1;
+  itens.forEach((a, i) => (i === atual ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current')));
+}
+addEventListener(
+  'scroll',
+  () => {
+    if (!agendado) {
+      agendado = true;
+      requestAnimationFrame(atualizarTrilha);
+    }
+  },
+  { passive: true },
+);
+addEventListener('resize', atualizarTrilha);
+atualizarTrilha();
 
 // Português por padrão; ?lang=en compartilha a versão em inglês; a escolha do visitante é lembrada.
 const pedido = new URLSearchParams(location.search).get('lang');
