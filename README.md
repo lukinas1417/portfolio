@@ -11,9 +11,11 @@ Página pessoal com projetos públicos e privados, experiência e contato, em **
   com as mesmas chaves dos atributos `data-i18n` do HTML.
 - O botão PT/EN lembra a escolha do visitante. O link `?lang=en` abre direto a versão em inglês.
 - As fontes ficam em `assets/fonts` (sem Google Fonts): Archivo, que é variável e tem eixo de largura, e IBM Plex Mono.
-- O visual é o de um documento técnico: papel e tinta, laranja industrial como acento, ficha técnica na abertura,
-  seções na margem e o Radar apresentado como estudo de caso (contexto, requisitos, decisões, falhas e limites).
-  A versão escura vem automaticamente do sistema do visitante (`prefers-color-scheme`).
+- O portfólio é a **porta de entrada**: identificação e contatos logo de cara, e o projeto em destaque (Radar de Chuva
+  RS) já aparece na primeira tela. O detalhe de planejamento e de decisões de cada projeto fica no repositório do
+  próprio projeto, não aqui.
+- Visual de papel e tinta, com laranja industrial como acento. A versão escura vem automaticamente do sistema do
+  visitante (`prefers-color-scheme`).
 
 ## Editar o conteúdo
 
