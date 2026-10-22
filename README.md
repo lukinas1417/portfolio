@@ -10,7 +10,10 @@ Página pessoal com projetos públicos e privados, experiência e contato, em **
 - O HTML já traz o português, então a página funciona sem JavaScript. O inglês está em `src/app.js`, no objeto `EN`,
   com as mesmas chaves dos atributos `data-i18n` do HTML.
 - O botão PT/EN lembra a escolha do visitante. O link `?lang=en` abre direto a versão em inglês.
-- As fontes ficam em `assets/fonts` (sem Google Fonts). O visual segue o do [Radar de Chuva RS](https://github.com/lukinas1417/radar-chuva-rs).
+- As fontes ficam em `assets/fonts` (sem Google Fonts): Archivo, que é variável e tem eixo de largura, e IBM Plex Mono.
+- O visual é o de um documento técnico: papel e tinta, laranja industrial como acento, ficha técnica na abertura,
+  seções na margem e o Radar apresentado como estudo de caso (contexto, requisitos, decisões, falhas e limites).
+  A versão escura vem automaticamente do sistema do visitante (`prefers-color-scheme`).
 
 ## Editar o conteúdo
 

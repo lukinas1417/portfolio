@@ -4,205 +4,216 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Lucas de Mélo Berra · Desenvolvedor Full Stack</title>
-  <meta name="description" content="Portfólio de Lucas de Mélo Berra, desenvolvedor Full Stack com foco em automação de processos e integrações. Projetos públicos e privados, experiência e contato.">
-  <meta name="theme-color" content="#070d14">
+  <meta name="description" content="Portfólio de Lucas de Mélo Berra, desenvolvedor Full Stack com foco em automação de processos e integrações. Estudo de caso, sistemas, experiência e contato.">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f2eee5">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121316">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Lucas de Mélo Berra · Desenvolvedor Full Stack">
   <meta property="og:description" content="Sistemas corporativos, aplicativos e plataformas web com regras de negócio complexas, da análise à produção.">
   <meta property="og:image" content="https://lukinas1417.github.io/assets/foto-perfil.png">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23070d14'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' text-anchor='middle' fill='%237dd3fc'%3ELB%3C/text%3E%3C/svg%3E">
-  <link rel="preload" href="assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e4431b'/%3E%3Ctext x='16' y='23' font-family='sans-serif' font-size='17' font-weight='800' text-anchor='middle' fill='%23f2eee5'%3ELB%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="src/style.css">
-  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <header class="topo">
-    <div class="topo-interno">
-      <a class="marca" href="#inicio" aria-label="Lucas Berra, início"><span class="marca-sigla">LB</span><span class="marca-nome">Lucas Berra</span></a>
-      <nav class="links" aria-label="Seções">
-        <a href="#projetos" data-i18n="nav.projects">Projetos</a>
-        <a href="#experiencia" data-i18n="nav.experience">Experiência</a>
-        <a href="#stack" data-i18n="nav.stack">Stack</a>
-        <a href="#contato" data-i18n="nav.contact">Contato</a>
-      </nav>
-      <div class="idioma" role="group" aria-label="Idioma / Language">
-        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
-      </div>
+  <div class="faixa">
+    <span class="mono" data-i18n="bar.label">Portfólio · 2026</span>
+    <div class="idioma" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
     </div>
-  </header>
+  </div>
 
-  <main id="inicio">
-    <section class="hero">
-      <div class="hero-texto">
-        <p class="etiqueta" data-i18n="hero.eyebrow">Rio Grande do Sul, Brasil</p>
-        <h1>Lucas de Mélo Berra</h1>
-        <p class="papel" data-i18n="hero.role">Desenvolvedor Full Stack · Automação de processos · Integrações</p>
-        <p class="resumo" data-i18n="hero.p1">Crio sistemas corporativos, aplicativos e plataformas web com regras de negócio complexas. Atuo de ponta a ponta: da análise da necessidade ao desenvolvimento, à integração, à implantação e à manutenção em produção.</p>
-        <p class="resumo" data-i18n="hero.p2">Antes de escrever código, procuro entender o que o sistema precisa ter para funcionar de verdade: dados confiáveis, falhas previstas, regras de negócio claras e uma operação simples. Tenho experiência com automação de processos, APIs externas e hardware.</p>
-        <div class="acoes">
-          <a class="botao primario" href="#projetos" data-i18n="hero.cta_projects">Ver projetos</a>
-          <a class="botao" id="cv-principal" href="assets/curriculo-lucas-berra-pt.pdf" download data-i18n="hero.cta_cv">Baixar currículo</a>
+  <main class="pagina">
+    <header class="abertura">
+      <p class="rotulo" data-i18n="hero.role">Desenvolvedor Full Stack · Automação de processos · Integrações</p>
+      <h1>Lucas de Mélo<br>Berra</h1>
+      <p class="lead" data-i18n="hero.lead">Antes de escrever código, procuro entender o que o sistema precisa ter para funcionar de verdade: dados confiáveis, falhas previstas, regras de negócio claras e uma operação simples.</p>
+      <dl class="ficha">
+        <div><dt data-i18n="f.role.k">Atuação</dt><dd data-i18n="f.role.v">Sistemas corporativos, aplicativos e plataformas web</dd></div>
+        <div><dt data-i18n="f.focus.k">Foco</dt><dd data-i18n="f.focus.v">Automação de processos e integrações</dd></div>
+        <div><dt data-i18n="f.where.k">Local</dt><dd data-i18n="f.where.v">Rio Grande do Sul, Brasil</dd></div>
+        <div><dt data-i18n="f.status.k">Situação</dt><dd data-i18n="f.status.v">Disponível para oportunidades em desenvolvimento de sistemas e produtos digitais</dd></div>
+        <div><dt data-i18n="f.contact.k">Contato</dt><dd><a href="mailto:lmberra2@gmail.com">lmberra2@gmail.com</a></dd></div>
+        <div>
+          <dt data-i18n="f.cv.k">Currículo</dt>
+          <dd><a href="assets/curriculo-lucas-berra-pt.pdf" download data-i18n="cv.pt">Português (PDF)</a> · <a href="assets/resume-lucas-berra-en.pdf" download data-i18n="cv.en">Inglês (PDF)</a></dd>
         </div>
-        <ul class="redes">
-          <li><a href="https://github.com/lukinas1417" rel="me noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/lucasberra-b47550149/" rel="me noopener">LinkedIn</a></li>
-          <li><a href="mailto:lmberra2@gmail.com">lmberra2@gmail.com</a></li>
-        </ul>
+      </dl>
+    </header>
+
+    <section class="bloco" id="quem">
+      <div class="margem"><p class="marca">§ 1</p><h2 data-i18n="sec.who">Quem</h2></div>
+      <div class="corpo quem">
+        <figure class="foto">
+          <img src="assets/foto-perfil.png" width="640" height="640" alt="Retrato de Lucas de Mélo Berra" data-i18n-attr="alt:who.alt" fetchpriority="high">
+          <figcaption class="mono" data-i18n="who.cap">Fig. 1 · Lucas de Mélo Berra</figcaption>
+        </figure>
+        <div class="texto">
+          <p data-i18n="who.p1">Sou desenvolvedor Full Stack e crio sistemas corporativos, aplicativos e plataformas web com regras de negócio complexas. Atuo de ponta a ponta: da análise da necessidade ao desenvolvimento, à integração, à implantação e à manutenção em produção.</p>
+          <p data-i18n="who.p2">Tenho experiência com automação de processos, APIs externas e hardware, em soluções usadas todos os dias por diferentes setores.</p>
+        </div>
       </div>
-      <figure class="retrato">
-        <img src="assets/foto-perfil.png" width="640" height="640" alt="Retrato de Lucas de Mélo Berra" data-i18n-attr="alt:hero.photo_alt" fetchpriority="high">
-      </figure>
     </section>
 
-    <section class="secao reveal" id="projetos">
-      <header class="secao-topo">
-        <span class="indice">01</span>
-        <h2 data-i18n="sec1.title">Projetos públicos</h2>
-      </header>
-      <p class="lead" data-i18n="sec1.lead">Código aberto, no ar e que qualquer pessoa pode abrir.</p>
-
-      <article class="destaque">
-        <div class="destaque-texto">
-          <p class="tipo" data-i18n="radar.kind">Projeto público · código aberto</p>
+    <section class="bloco" id="sistemas">
+      <div class="margem"><p class="marca">§ 2</p><h2 data-i18n="sec.systems">Sistemas</h2></div>
+      <div class="corpo">
+        <article class="caso">
+          <p class="rotulo" data-i18n="radar.kind">Estudo de caso · código aberto</p>
           <h3>Radar de Chuva RS</h3>
-          <p data-i18n="radar.desc">Mapa em tela cheia da chuva acumulada e da situação dos rios em cada município do Rio Grande do Sul, com dados quase em tempo real do CEMADEN e da Defesa Civil RS. Feito para ser entendido de relance: a sua cidade, a chuva e o rio, sem planilha.</p>
-          <h4 class="rotulo-pontos" data-i18n="radar.decisions">Decisões de sistema</h4>
-          <ul class="pontos">
-            <li><b data-i18n="radar.b1t">Fontes instáveis são o caso normal.</b> <span data-i18n="radar.b1">Tenta de novo, reaproveita o último dado publicado e avisa quando ele está velho.</span></li>
-            <li><b data-i18n="radar.b2t">Integridade do dado.</b> <span data-i18n="radar.b2">“Sem dado” é diferente de zero, e o sistema nunca indica normalidade quando não há leitura.</span></li>
-            <li><b data-i18n="radar.b3t">Falha segura.</b> <span data-i18n="radar.b3">Sem certificado válido ou sem token, não contorna a proteção: mostra o último dado e diz de quando ele é.</span></li>
-            <li><b data-i18n="radar.b4t">Operação enxuta.</b> <span data-i18n="radar.b4">Site estático e coleta agendada, sem servidor, respeitando os limites e as regras de uso de cada fonte.</span></li>
-            <li><b data-i18n="radar.b5t">Privacidade.</b> <span data-i18n="radar.b5">A localização do usuário nunca sai do navegador.</span></li>
-          </ul>
-          <ul class="tags">
-            <li>JavaScript</li><li>MapLibre GL</li><li>GraphQL</li><li>GitHub Actions</li><li>GitHub Pages</li>
-            <li data-i18n="radar.tag_data">Dados abertos</li>
-          </ul>
-          <div class="acoes">
-            <a class="botao primario" href="https://lukinas1417.github.io/radar-chuva-rs/" rel="noopener" data-i18n="radar.live">Ver ao vivo</a>
-            <a class="botao" href="https://github.com/lukinas1417/radar-chuva-rs" rel="noopener" data-i18n="radar.code">Ver código</a>
-            <a class="botao" href="https://github.com/lukinas1417/radar-chuva-rs/blob/main/docs/arquitetura.md" rel="noopener" data-i18n="radar.arch">Arquitetura e decisões</a>
-          </div>
-          <p class="nota" data-i18n="radar.note">Projeto de portfólio: não substitui os alertas oficiais da Defesa Civil.</p>
-        </div>
-        <a class="moldura" href="https://lukinas1417.github.io/radar-chuva-rs/" rel="noopener" aria-label="Abrir o Radar de Chuva RS" data-i18n-attr="aria-label:radar.open">
-          <img src="assets/radar-desktop.png" width="1440" height="810" loading="lazy" decoding="async"
-               alt="Mapa do Rio Grande do Sul com a chuva por município e contornos luminosos nos rios em risco" data-i18n-attr="alt:radar.img_alt">
-        </a>
-      </article>
-    </section>
+          <p class="resumo-caso" data-i18n="radar.desc">Mapa em tela cheia da chuva acumulada e da situação dos rios em cada município do Rio Grande do Sul, com dados quase em tempo real do CEMADEN e da Defesa Civil RS. Feito para ser entendido de relance: a sua cidade, a chuva e o rio, sem planilha.</p>
 
-    <section class="secao reveal" id="privados">
-      <header class="secao-topo">
-        <span class="indice">02</span>
-        <h2 data-i18n="sec2.title">Projetos privados</h2>
-      </header>
-      <p class="lead" data-i18n="sec2.lead">Sistemas em produção cujo código é privado. Descrevo o problema e a stack, sem expor dados internos.</p>
+          <figure class="figura">
+            <a href="https://lukinas1417.github.io/radar-chuva-rs/" rel="noopener" aria-label="Abrir o Radar de Chuva RS" data-i18n-attr="aria-label:radar.open">
+              <img src="assets/radar-desktop.png" width="1440" height="810" loading="lazy" decoding="async"
+                   alt="Mapa do Rio Grande do Sul com a chuva por município e contornos luminosos nos rios em risco" data-i18n-attr="alt:radar.img_alt">
+            </a>
+            <figcaption class="mono" data-i18n="radar.fig">Fig. 2 · Radar de Chuva RS, no ar</figcaption>
+          </figure>
 
-      <article class="cartao cartao-largo">
-        <div class="cartao-topo">
-          <h3>Rejoga</h3>
-          <span class="selo" data-i18n="rejoga.badge">Em produção · código privado</span>
-        </div>
-        <p class="tipo" data-i18n="rejoga.kind">Marketplace de boardgames</p>
-        <p data-i18n="rejoga.desc">Marketplace de boardgames para o mercado brasileiro, com anúncios, pedidos, logística, notificações, suporte, mediação e painel administrativo.</p>
-        <ul class="tags">
-          <li>React</li><li>Tailwind CSS</li><li>Node.js</li><li data-i18n="s.rest">APIs REST</li><li>PostgreSQL</li><li>Supabase</li>
-          <li>AWS S3</li><li>Render</li><li>Mercado Pago</li><li>Melhor Envio</li><li>SuperFrete</li><li>SendPulse</li>
-        </ul>
-        <a class="link" href="https://rejoga.com.br" rel="noopener" data-i18n="rejoga.visit">Visitar rejoga.com.br</a>
-      </article>
+          <dl class="spec">
+            <div>
+              <dt data-i18n="r.ctx.k">Contexto</dt>
+              <dd data-i18n="r.ctx.v">Duas fontes oficiais, sem acordo formal com nenhuma: o CEMADEN (endpoint público, não documentado) e a API da Defesa Civil do RS. Quem olha o mapa pode tomar uma decisão com base nele.</dd>
+            </div>
+            <div>
+              <dt data-i18n="r.req.k">Requisitos</dt>
+              <dd>
+                <ul class="lista">
+                  <li data-i18n="r.rq1">Não mentir: dado ausente ou velho nunca pode parecer normal.</li>
+                  <li data-i18n="r.rq2">Continuar de pé com fontes instáveis.</li>
+                  <li data-i18n="r.rq3">Operação mínima: sem servidor e sem custo fixo.</li>
+                  <li data-i18n="r.rq4">Respeitar os limites e os termos de cada fonte.</li>
+                  <li data-i18n="r.rq5">Privacidade da localização do usuário.</li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt data-i18n="r.dec.k">Decisões</dt>
+              <dd>
+                <ol class="decisoes">
+                  <li><strong data-i18n="r.d1t">Site estático e coleta agendada, sem backend.</strong> <span data-i18n="r.d1">Custo zero e nenhuma superfície de ataque no servidor. O preço é a latência e a dependência do agendador.</span></li>
+                  <li><strong data-i18n="r.d2t">“Sem dado” é diferente de zero.</strong> <span data-i18n="r.d2">O mapa mostra onde não há pluviômetro, em vez de pintar tudo de “sem chuva”.</span></li>
+                  <li><strong data-i18n="r.d3t">Frescor medido contra a coleta, não contra o relógio.</strong> <span data-i18n="r.d3">Um erro real mostrou que um estado desconhecido nunca pode virar “normal”.</span></li>
+                  <li><strong data-i18n="r.d4t">Proteções não são contornadas.</strong> <span data-i18n="r.d4">Captcha e verificação de certificado são limites do sistema, não obstáculos.</span></li>
+                </ol>
+              </dd>
+            </div>
+            <div>
+              <dt data-i18n="r.fail.k">Falhas tratadas</dt>
+              <dd>
+                <ul class="lista">
+                  <li><strong data-i18n="r.f1t">CEMADEN recusa a conexão.</strong> <span data-i18n="r.f1">Tenta de novo e reaproveita o último dado publicado.</span></li>
+                  <li><strong data-i18n="r.f2t">API da Defesa Civil com certificado vencido.</strong> <span data-i18n="r.f2">Mantém o último dado e diz de quando ele é, sem desativar a verificação.</span></li>
+                  <li><strong data-i18n="r.f3t">Agendador do GitHub irregular.</strong> <span data-i18n="r.f3">Gatilho externo gratuito, documentado no repositório.</span></li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt data-i18n="r.test.k">Verificação</dt>
+              <dd data-i18n="r.test.v">40 testes automatizados (geometria, normalização das fontes e regras de dados). Injetei defeitos de propósito, inclusive o erro real da “falsa normalidade”, para confirmar que os testes falham.</dd>
+            </div>
+            <div>
+              <dt data-i18n="r.lim.k">Limites</dt>
+              <dd data-i18n="r.lim.v">Sem testes de interface nem de contrato com as fontes, sem monitoramento próprio da coleta, e menos da metade dos municípios tem pluviômetro nas redes consultadas (o mapa mostra a lacuna).</dd>
+            </div>
+            <div>
+              <dt data-i18n="r.stack.k">Stack</dt>
+              <dd class="mono">JavaScript · MapLibre GL · GraphQL · GitHub Actions · GitHub Pages · <span data-i18n="r.tag">Dados abertos</span></dd>
+            </div>
+          </dl>
 
-      <article class="cartao cartao-largo">
-        <div class="cartao-topo">
-          <h3 data-i18n="ind.title">Sistemas para o setor industrial</h3>
-          <span class="selo" data-i18n="private.badge">Código privado</span>
-        </div>
-        <p class="tipo" data-i18n="ind.kind">Soluções sob medida · desde 2022</p>
-        <p data-i18n="ind.desc">Desenvolvo sistemas sob medida para a operação de uma indústria: automatizo processos, integro sistemas web a dispositivos físicos e reduzo atividades manuais. Mantenho e evoluo sistemas críticos usados todos os dias, com menos erros e mais confiabilidade operacional.</p>
-        <ul class="pontos">
-          <li data-i18n="ind.b1">Rastreabilidade e conferência de itens, com leitura de QR Code.</li>
-          <li data-i18n="ind.b2">Integração entre sistemas web, leitores, scanners e impressoras de etiquetas.</li>
-          <li data-i18n="ind.b3">Aplicativos móveis para rotinas operacionais, de coletas e entregas a inspeções.</li>
-          <li data-i18n="ind.b4">Aplicações web internas, com regras de negócio sob medida.</li>
-        </ul>
-        <ul class="tags">
-          <li>Node.js</li><li>PHP</li><li>Flutter</li><li>Dart</li><li>C++</li><li data-i18n="s.rest">APIs REST</li><li data-i18n="s.hw">Integrações com hardware</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="secao reveal" id="experiencia">
-      <header class="secao-topo">
-        <span class="indice">03</span>
-        <h2 data-i18n="sec3.title">Experiência</h2>
-      </header>
-      <ol class="linha-tempo">
-        <li>
-          <p class="quando" data-i18n="exp1.when">2022 – atual</p>
-          <h3><span data-i18n="exp1.role">Técnico de Sistemas Sênior</span> <span class="empresa" data-i18n="exp1.company">· Setor industrial</span></h3>
-          <p data-i18n="exp1.desc">Desenvolvimento de soluções sob medida para setores específicos, automatizando processos, integrando sistemas e reduzindo atividades manuais. Manutenção e evolução de sistemas críticos usados diariamente, com redução de erros e aumento da confiabilidade operacional.</p>
-        </li>
-        <li>
-          <p class="quando" data-i18n="exp2.when">Projeto privado em produção</p>
-          <h3><span data-i18n="exp2.role">Desenvolvedor Full Stack</span> <span class="empresa">· Rejoga</span></h3>
-          <p data-i18n="exp2.desc">Desenvolvimento e evolução de um marketplace de boardgames, com foco em oferecer a melhor experiência e qualidade de serviço ao mercado brasileiro. Front-end em React e Tailwind CSS, back-end em Node.js com APIs REST, e pagamentos e operação com Mercado Pago, Melhor Envio, SuperFrete e SendPulse.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="secao reveal" id="stack">
-      <header class="secao-topo">
-        <span class="indice">04</span>
-        <h2 data-i18n="sec4.title">Stack</h2>
-      </header>
-      <div class="stack">
-        <div>
-          <h3 data-i18n="stack.lang">Linguagens</h3>
-          <ul class="tags"><li>JavaScript</li><li>TypeScript</li><li>PHP</li><li>Dart</li><li>C++</li><li>Python</li></ul>
-        </div>
-        <div>
-          <h3 data-i18n="stack.front">Front-end e mobile</h3>
-          <ul class="tags"><li>React</li><li>Tailwind CSS</li><li>Flutter</li></ul>
-        </div>
-        <div>
-          <h3 data-i18n="stack.back">Back-end</h3>
-          <ul class="tags"><li>Node.js</li><li>Express</li><li data-i18n="s.rest">APIs REST</li><li>FastAPI</li></ul>
-        </div>
-        <div>
-          <h3 data-i18n="stack.infra">Dados e infraestrutura</h3>
-          <ul class="tags"><li>PostgreSQL</li><li>Supabase</li><li>Docker</li><li>Render</li><li>AWS</li><li>IIS</li></ul>
-        </div>
-        <div>
-          <h3 data-i18n="stack.other">Outros</h3>
-          <ul class="tags"><li>Git</li><li data-i18n="s.hw">Integrações com hardware</li></ul>
-        </div>
+          <p class="links">
+            <a href="https://lukinas1417.github.io/radar-chuva-rs/" rel="noopener" data-i18n="radar.live">Ver ao vivo</a>
+            <a href="https://github.com/lukinas1417/radar-chuva-rs" rel="noopener" data-i18n="radar.code">Ver código</a>
+            <a href="https://github.com/lukinas1417/radar-chuva-rs/blob/main/docs/arquitetura.md" rel="noopener" data-i18n="radar.arch">Arquitetura e decisões</a>
+          </p>
+        </article>
       </div>
     </section>
 
-    <section class="secao reveal contato" id="contato">
-      <header class="secao-topo">
-        <span class="indice">05</span>
-        <h2 data-i18n="sec5.title">Contato</h2>
-      </header>
-      <p class="chamada" data-i18n="contact.lead">Disponível para oportunidades em desenvolvimento de sistemas e produtos digitais.</p>
-      <ul class="contatos">
-        <li><a href="mailto:lmberra2@gmail.com">lmberra2@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/lucasberra-b47550149/" rel="me noopener">LinkedIn</a></li>
-        <li><a href="https://github.com/lukinas1417" rel="me noopener">GitHub</a></li>
-        <li><a href="https://wa.me/qr/GRPGSCZMHAHEL1" rel="noopener">WhatsApp</a></li>
-      </ul>
-      <div class="acoes">
-        <a class="botao" href="assets/curriculo-lucas-berra-pt.pdf" download data-i18n="contact.cv_pt">Currículo em português (PDF)</a>
-        <a class="botao" href="assets/resume-lucas-berra-en.pdf" download data-i18n="contact.cv_en">Currículo em inglês (PDF)</a>
+    <section class="bloco" id="outros">
+      <div class="margem"><p class="marca">§ 3</p><h2 data-i18n="sec.others">Outros sistemas</h2></div>
+      <div class="corpo">
+        <p class="nota-sec" data-i18n="others.lead">Código privado: descrevo o problema e a stack, sem expor dados internos.</p>
+        <ul class="sistemas">
+          <li>
+            <div class="topo-item"><h3>Rejoga</h3><span class="etiqueta mono" data-i18n="o.rejoga.tag">em produção · código privado</span></div>
+            <p class="rotulo" data-i18n="o.rejoga.kind">Marketplace de boardgames</p>
+            <p data-i18n="o.rejoga.d">Marketplace de boardgames para o mercado brasileiro, com anúncios, pedidos, logística, notificações, suporte, mediação e painel administrativo.</p>
+            <p class="linha-stack mono">React · Tailwind CSS · Node.js · <span data-i18n="s.rest">APIs REST</span> · PostgreSQL · Supabase · AWS S3 · Render · Mercado Pago · Melhor Envio · SuperFrete · SendPulse</p>
+            <p class="links"><a href="https://rejoga.com.br" rel="noopener" data-i18n="o.rejoga.visit">Visitar rejoga.com.br</a></p>
+          </li>
+          <li>
+            <div class="topo-item"><h3 data-i18n="o.ind.t">Sistemas para o setor industrial</h3><span class="etiqueta mono" data-i18n="o.ind.tag">código privado</span></div>
+            <p class="rotulo" data-i18n="o.ind.kind">Soluções sob medida · desde 2022</p>
+            <p data-i18n="o.ind.d">Desenvolvo sistemas sob medida para a operação de uma indústria: automatizo processos, integro sistemas web a dispositivos físicos e reduzo atividades manuais. Mantenho e evoluo sistemas críticos usados todos os dias, com menos erros e mais confiabilidade operacional.</p>
+            <ul class="lista">
+              <li data-i18n="o.ind.b1">Rastreabilidade e conferência de itens, com leitura de QR Code.</li>
+              <li data-i18n="o.ind.b2">Integração entre sistemas web, leitores, scanners e impressoras de etiquetas.</li>
+              <li data-i18n="o.ind.b3">Aplicativos móveis para rotinas operacionais, de coletas e entregas a inspeções.</li>
+              <li data-i18n="o.ind.b4">Aplicações web internas, com regras de negócio sob medida.</li>
+            </ul>
+            <p class="linha-stack mono">Node.js · PHP · Flutter · Dart · C++ · <span data-i18n="s.rest">APIs REST</span> · <span data-i18n="s.hw">Integrações com hardware</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bloco" id="experiencia">
+      <div class="margem"><p class="marca">§ 4</p><h2 data-i18n="sec.exp">Experiência</h2></div>
+      <div class="corpo">
+        <ol class="experiencia">
+          <li>
+            <p class="quando mono" data-i18n="exp1.when">2022 – atual</p>
+            <div>
+              <h3><span data-i18n="exp1.role">Técnico de Sistemas Sênior</span> <span class="empresa" data-i18n="exp1.company">· Setor industrial</span></h3>
+              <p data-i18n="exp1.desc">Desenvolvimento de soluções sob medida para setores específicos, automatizando processos, integrando sistemas e reduzindo atividades manuais. Manutenção e evolução de sistemas críticos usados diariamente, com redução de erros e aumento da confiabilidade operacional.</p>
+            </div>
+          </li>
+          <li>
+            <p class="quando mono" data-i18n="exp2.when">Projeto privado em produção</p>
+            <div>
+              <h3><span data-i18n="exp2.role">Desenvolvedor Full Stack</span> <span class="empresa">· Rejoga</span></h3>
+              <p data-i18n="exp2.desc">Desenvolvimento e evolução de um marketplace de boardgames, com foco em oferecer a melhor experiência e qualidade de serviço ao mercado brasileiro. Front-end em React e Tailwind CSS, back-end em Node.js com APIs REST, e pagamentos e operação com Mercado Pago, Melhor Envio, SuperFrete e SendPulse.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="bloco" id="stack">
+      <div class="margem"><p class="marca">§ 5</p><h2 data-i18n="sec.stack">Stack</h2></div>
+      <div class="corpo">
+        <dl class="stack">
+          <div><dt data-i18n="stack.lang">Linguagens</dt><dd class="mono">JavaScript · TypeScript · PHP · Dart · C++ · Python</dd></div>
+          <div><dt data-i18n="stack.front">Front-end e mobile</dt><dd class="mono">React · Tailwind CSS · Flutter</dd></div>
+          <div><dt data-i18n="stack.back">Back-end</dt><dd class="mono">Node.js · Express · <span data-i18n="s.rest">APIs REST</span> · FastAPI</dd></div>
+          <div><dt data-i18n="stack.infra">Dados e infraestrutura</dt><dd class="mono">PostgreSQL · Supabase · Docker · Render · AWS · IIS</dd></div>
+          <div><dt data-i18n="stack.other">Outros</dt><dd class="mono">Git · <span data-i18n="s.hw">Integrações com hardware</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="bloco contato" id="contato">
+      <div class="margem"><p class="marca">§ 6</p><h2 data-i18n="sec.contact">Contato</h2></div>
+      <div class="corpo">
+        <p class="chamada" data-i18n="contact.lead">Disponível para oportunidades em desenvolvimento de sistemas e produtos digitais.</p>
+        <a class="email" href="mailto:lmberra2@gmail.com">lmberra2@gmail.com</a>
+        <ul class="redes">
+          <li><a href="https://www.linkedin.com/in/lucasberra-b47550149/" rel="me noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/lukinas1417" rel="me noopener">GitHub</a></li>
+          <li><a href="https://wa.me/qr/GRPGSCZMHAHEL1" rel="noopener">WhatsApp</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <footer class="rodape">
-    <p>© 2026 Lucas de Mélo Berra</p>
-    <p data-i18n="footer.text">Feito à mão, com HTML, CSS e JavaScript, sem frameworks.</p>
+  <footer class="rodape pagina">
+    <p class="mono">© 2026 Lucas de Mélo Berra</p>
+    <p class="mono" data-i18n="footer.text">Feito à mão, com HTML, CSS e JavaScript, sem frameworks.</p>
   </footer>
 
   <script type="module" src="src/app.js"></script>
